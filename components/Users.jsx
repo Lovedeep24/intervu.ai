@@ -74,7 +74,7 @@ export default function Users() {
     }
    }
    const handleUnsuspend = async (userId) => {
-       const res = await axios.get(`https://intervu-ai-beige.vercel.app/api/admin/unsuspendUser/${userId}`)
+       const res = await axios.patch(`https://intervu-ai-beige.vercel.app/api/admin/unsuspendUser/${userId}`)
     // const res=await axios.patch(`http://localhost:3000/api/admin/unsuspendUser/${userId}`)
     if(res.status === 200)
     {
